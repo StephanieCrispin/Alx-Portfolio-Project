@@ -9,7 +9,8 @@
     "test": "",
     "lint": "eslint src/**/*.ts",
     "prettier-fix": "",
-    "prettier": "prettier src/**/*.ts"
+    "prettier": "prettier src/**/*.ts",
+    "prepare": "husky cd .. && husky auth/"
   },
   "keywords": [
     "Authentication",
@@ -30,7 +31,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript-prettier": "^5.0.0",
     "eslint-plugin-import": "^2.29.1",
-    "husky": "^9.0.11",
+    "husky": "^8.0.0",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.7",
     "supertest": "^7.0.0",
