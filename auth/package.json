@@ -10,7 +10,8 @@
     "lint": "eslint src/**/*.ts",
     "prettier-fix": "",
     "prettier": "prettier src/**/*.ts",
-    "prepare": "husky cd .. && husky auth/"
+    "prepare": "husky cd .. && husky auth/",
+    "pre-commit": "lint-staged"
   },
   "keywords": [
     "Authentication",
@@ -40,8 +41,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint .",
-      "prettier --write ."
+      "npx lint",
+      "npx prettier"
     ]
   },
   "husky": {

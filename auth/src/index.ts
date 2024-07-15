@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const random = 'hello';
+
 app.get('*', (req, res) => {
   res.send({});
 });
