@@ -7,7 +7,7 @@
     "start:dev": "nodemon src/index.ts",
     "start": "",
     "test": "",
-    "lint": "eslint",
+    "lint": "eslint --fix",
     "prettier-fix": "",
     "prettier": "prettier src/**/*.ts",
     "prepare": "husky cd .. && husky auth/",

@@ -3,6 +3,7 @@ import express from 'express';
 const app = express();
 
 const random = 'hello';
+const random3 = 'hello';
 
 app.get('*', (req, res) => {
   res.send({});
