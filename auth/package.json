@@ -41,8 +41,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "npx lint",
-      "npx prettier"
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "husky": {
