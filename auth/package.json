@@ -9,7 +9,7 @@
     "test": "",
     "lint": "eslint --fix",
     "prettier-fix": "",
-    "prettier": "prettier src/**/*.ts",
+    "prettier": "prettier --check src/**/*.ts",
     "prepare": "husky cd .. && husky auth/",
     "pre-commit": "lint-staged"
   },
@@ -40,9 +40,10 @@
     "typescript": "^5.5.3"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "npx lint",
-      "npx prettier --write"
+    "src/**/*.ts": [
+      "npm run prettier",
+      "npm run lint",
+      "git add"
     ]
   },
   "husky": {
