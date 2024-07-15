@@ -7,7 +7,7 @@
     "start:dev": "nodemon src/index.ts",
     "start": "",
     "test": "",
-    "lint": "npx eslint . --ext .ts,.tsx",
+    "lint": "eslint",
     "prettier-fix": "",
     "prettier": "prettier src/**/*.ts",
     "prepare": "husky cd .. && husky auth/",
@@ -41,8 +41,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+      "npx lint",
+      "npx prettier --write"
     ]
   },
   "husky": {
