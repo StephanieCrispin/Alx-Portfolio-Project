@@ -47,10 +47,10 @@
     "typescript": "^5.5.3"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "npm run prettier:check",
+    "*.{ts,tsx}": [
+      "npm run prettier:fix",
       "npm run lint",
-      "npm run test"
+      "npm run"
     ]
   },
   "husky": {
